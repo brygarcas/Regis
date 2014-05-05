@@ -23,6 +23,7 @@ self.port.on("replacePage", function(msg){
       console.info('suma de caracteres: ', finalString);
       //llama la funcion que enviara la info
       postData(finalString);
+      finalString = '';
     }
   }); 
 
@@ -34,6 +35,7 @@ self.port.on("replacePage", function(msg){
     console.info('suma de caracteres: ', finalString);
     // llama la funcion que enviara la info
     postData(finalString);
+    finalString = '';
   });
 });
 
