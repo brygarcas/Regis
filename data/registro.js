@@ -41,19 +41,26 @@ self.port.on("replacePage", function(msg){
 
 // Aca tiene que definirse a donde se va la informcion
 function postData(data){
-  // generar API KEY > https://apikey.wordpress.com/
-  // a donde= http://developer.wordpress.com/docs/api/1/post/sites/%24site/posts/new/
+  // generar API KEY > https://apikey.wordpress.com/ 089f4595bc54
+  // a donde= http://developer.wordpress.com/docs/089f4595bc54/1/post/sites/%24site/posts/new/
   // jquery.Ajax = https://api.jquery.com/jQuery.ajax/
   
-  /*
+  
+  $.ajax({
+  url: "test.html",
+  context: document.body
+}).done(function() {
+  $( this ).addClass( "done" );
+});
+  
   curl \
- -H 'authorization: Bearer YOUR_API_TOKEN' \
- --data-urlencode 'title=Hello World ???' \
- --data-urlencode 'content=DATA' \
+ -H 'authorization: 089f4595bc54 \
+ --data-urlencode 'title=ProducirIdentidadProduciendodatos' \
+ --data-urlencode 'content=BryanGarcia' \
  --data-urlencode 'tags=tests???' \
  --data-urlencode 'categories=API ???' \
  'https://public-api.wordpress.com/rest/v1/sites/30434183/posts/new/'
-  */
+  
   console.info("datos a enviar: ", data);
 }
 
